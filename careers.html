@@ -46,13 +46,16 @@
                     <div class="application-form-wrap" id="apply">
                         <p class="section-label">Apply for the internship</p>
                         <h2>Tell us a little about yourself.</h2>
-                        <p class="application-hint">Submitting opens a draft email in your email app. Please attach your resume before sending.</p>
-                        <form class="application-form" id="intern-application">
+                        <p class="application-hint">Submit your details and resume directly to our team.</p>
+                        <form class="application-form" id="intern-application" action="https://formsubmit.co/hello.evolvetechlabs@gmail.com" method="POST" enctype="multipart/form-data">
+                            <input type="hidden" name="_subject" value="Full-Stack Software Engineer Intern Application">
+                            <input type="hidden" name="_template" value="table">
+                            <div class="form-honeypot" aria-hidden="true"><label for="intern-website">Leave this field blank</label><input id="intern-website" name="_honey" tabindex="-1" autocomplete="off"></div>
                             <label for="applicant-name">Full name</label>
-                            <input id="applicant-name" name="Full name" autocomplete="name" required>
+                            <input id="applicant-name" name="name" autocomplete="name" required>
 
                             <label for="applicant-email">Email address</label>
-                            <input id="applicant-email" name="Email address" type="email" autocomplete="email" required>
+                            <input id="applicant-email" name="email" type="email" autocomplete="email" required>
 
                             <label for="applicant-links">GitHub or portfolio <span>(optional)</span></label>
                             <input id="applicant-links" name="GitHub or portfolio" type="url" placeholder="https://">
@@ -63,9 +66,12 @@
                             <label for="applicant-note">What interests you about this internship?</label>
                             <textarea id="applicant-note" name="Why you are interested" rows="5" required></textarea>
 
-                            <button class="button application-submit" type="submit">Prepare application email <span aria-hidden="true">&nbsp;↗</span></button>
+                            <label for="applicant-resume">Resume (PDF or Word, up to 10 MB)</label>
+                            <input id="applicant-resume" name="Resume" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
+
+                            <button class="button application-submit" type="submit">Submit application <span aria-hidden="true">&nbsp;↗</span></button>
                         </form>
-                        <p class="application-hint application-privacy">Your answers are added to an email draft on your device; this page does not send or store them.</p>
+                        <p class="application-hint application-privacy">Your application is delivered through FormSubmit to hello.evolvetechlabs@gmail.com. FormSubmit may retain submissions for up to 30 days.</p>
                     </div>
                 </div>
             </div>
@@ -73,14 +79,5 @@
         <section class="contact"><div class="section-inner contact-row"><div><p class="eyebrow">Questions first?</p><h2>Reach out to our team about the internship.</h2></div><a class="button" href="mailto:hello.evolvetechlabs@gmail.com?subject=Full-Stack%20Internship%20Question">Email Evolve <span aria-hidden="true">&nbsp;↗</span></a></div></section>
     </main>
     <footer><div class="footer-inner"><a class="brand" href="index.html"><img class="brand-logo" src="assets/evolve-logo.png" alt="Evolve Tech Labs"></a><span>Thoughtful technology. Forward motion.</span><span>© 2026 Evolve Tech Labs</span></div></footer>
-    <script>
-        document.querySelector("#intern-application").addEventListener("submit", (event) => {
-            event.preventDefault();
-            const answers = new FormData(event.currentTarget);
-            const body = Array.from(answers, ([question, answer]) => `${question}: ${answer}`).join("\n\n");
-            const subject = encodeURIComponent("Full-Stack Software Engineer Intern Application");
-            window.location.href = `mailto:hello.evolvetechlabs@gmail.com?subject=${subject}&body=${encodeURIComponent(body)}`;
-        });
-    </script>
 </body>
 </html>
