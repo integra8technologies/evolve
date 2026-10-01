@@ -181,6 +181,18 @@ h2 { max-width: 700px; margin-bottom: 16px; font-family: var(--display); font-si
 .assurance-list { margin: 28px 0 0; padding: 0; border-top: 1px solid var(--line); list-style: none; }
 .assurance-list li { display: grid; grid-template-columns: 28px 1fr; gap: 12px; padding: 15px 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 14px; line-height: 1.65; }
 .assurance-list li::before { color: var(--brand); font-weight: 700; content: "+"; }
+.team-section { background: #fff; }
+.team-layout { display: grid; grid-template-columns: minmax(240px, .8fr) minmax(0, 1.2fr); gap: clamp(42px, 8vw, 100px); align-items: center; }
+.team-portrait { position: relative; width: min(100%, 350px); aspect-ratio: 4 / 5; margin: 0; overflow: hidden; background: var(--brand-deep); color: var(--lime); }
+.team-portrait > span { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--display); font-size: 88px; font-weight: 800; }
+.team-portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.team-portrait.is-missing img { display: none; }
+.team-portrait.has-image > span { display: none; }
+.team-portrait figcaption { position: absolute; right: 0; bottom: 0; left: 0; padding: 13px 15px; background: linear-gradient(transparent, rgba(22, 5, 29, .82)); color: #fff; font-size: 12px; font-weight: 600; }
+.team-copy h2 { max-width: 600px; }
+.team-role { margin-bottom: 18px; color: var(--brand); font-family: var(--display); font-size: 17px; font-weight: 700; }
+.team-role span { display: block; margin-top: 5px; color: var(--muted); font-family: var(--body); font-size: 13px; font-weight: 500; }
+.team-copy > p:last-child { max-width: 560px; margin-bottom: 0; color: var(--muted); font-size: 15px; line-height: 1.8; }
 .faq-list { max-width: 900px; border-top: 1px solid var(--line); }
 .faq-list details { padding: 0; border-bottom: 1px solid var(--line); }
 .faq-list summary { display: flex; min-height: 64px; align-items: center; justify-content: space-between; gap: 24px; cursor: pointer; list-style: none; font-family: var(--display); font-size: 16px; font-weight: 700; }
@@ -311,6 +323,8 @@ footer { padding: 25px 0; background: #260a34; color: rgba(255, 255, 255, .72); 
     .process-cards { grid-template-columns: 1fr; gap: 0; }
     .process-card { padding: 21px 0; border-bottom: 1px solid var(--line); }
     .feature-row { grid-template-columns: 1fr; gap: 14px; }
+    .team-layout { grid-template-columns: 1fr; gap: 30px; }
+    .team-portrait { width: min(100%, 360px); }
     .step { grid-template-columns: 48px 1fr; gap: 12px 18px; }
     .step p { grid-column: 2; }
     .contact { padding: 58px 0; }
