@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for the unpaid Full-Stack Software Engineer internship at Evolve Tech Labs.">
+    <meta name="theme-color" content="#4f0f69">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Careers | Evolve Tech Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <header class="site-header section-inner">
+        <a class="brand" href="index.html" aria-label="Evolve Tech Labs home"><img class="brand-logo" src="assets/evolve-logo-black.png" alt="Evolve Tech Labs"></a>
+        <nav class="nav-links desktop-nav" aria-label="Main navigation"><a href="services.html">Services</a><a href="solutions.html">Solutions</a><a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="about.html">About</a><a href="approach.html">Approach</a><a href="careers.html" aria-current="page">Careers</a><a class="nav-cta" href="contact.html">Let's talk <span aria-hidden="true">↗</span></a></nav>
+        <details class="mobile-nav"><summary>Menu</summary><nav class="mobile-nav-panel" aria-label="Mobile navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="solutions.html">Solutions</a><a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="about.html">About</a><a href="approach.html">Approach</a><a href="careers.html" aria-current="page">Careers</a><a href="contact.html">Contact</a></nav></details>
+    </header>
+    <main>
+        <section class="page-banner"><div class="page-banner-inner"><p class="eyebrow">Careers at Evolve</p><h1>Build your skills by building real software.</h1><p>Join us as a Full-Stack Software Engineer Intern and learn through thoughtful, hands-on product work with our team.</p></div></section>
+        <section class="section">
+            <div class="section-inner">
+                <div class="application-layout">
+                    <div class="application-intro">
+                        <p class="section-label">Internship opening</p>
+                        <h2>Full-Stack Software Engineer Intern</h2>
+                        <p class="section-lead">An opportunity for an aspiring engineer to grow across the parts of a product, from user-facing features to the systems behind them.</p>
+                        <div class="unpaid-notice"><span class="item-number">Important details</span><p><strong>This is an unpaid internship.</strong> Please apply only if an unpaid placement is workable for you. We will discuss the role, expectations, and placement details with applicants before any commitment.</p></div>
+                        <h3 class="application-subheading">What you could work on</h3>
+                        <ul class="assurance-list">
+                            <li>Building and improving features across web application frontends and backends.</li>
+                            <li>Working with APIs, databases, and the flow of data through a product.</li>
+                            <li>Writing readable code, testing changes, and taking part in reviews.</li>
+                            <li>Collaborating with the team to understand problems and shape practical solutions.</li>
+                        </ul>
+                        <h3 class="application-subheading">What will help you thrive</h3>
+                        <ul class="assurance-list">
+                            <li>Curiosity about how software works across the stack and a willingness to learn.</li>
+                            <li>Some experience with a programming language, web development, or personal projects.</li>
+                            <li>Care for clear communication, teamwork, and following through on tasks.</li>
+                            <li>A GitHub profile, portfolio, or project you can tell us about is welcome.</li>
+                        </ul>
+                    </div>
+                    <div class="application-form-wrap" id="apply">
+                        <p class="section-label">Apply for the internship</p>
+                        <h2>Tell us a little about yourself.</h2>
+                        <p class="application-hint">Submitting opens a draft email in your email app. Please attach your resume before sending.</p>
+                        <form class="application-form" id="intern-application">
+                            <label for="applicant-name">Full name</label>
+                            <input id="applicant-name" name="Full name" autocomplete="name" required>
+
+                            <label for="applicant-email">Email address</label>
+                            <input id="applicant-email" name="Email address" type="email" autocomplete="email" required>
+
+                            <label for="applicant-links">GitHub or portfolio <span>(optional)</span></label>
+                            <input id="applicant-links" name="GitHub or portfolio" type="url" placeholder="https://">
+
+                            <label for="applicant-availability">When could you start?</label>
+                            <input id="applicant-availability" name="Availability" placeholder="e.g. June 2026" required>
+
+                            <label for="applicant-note">What interests you about this internship?</label>
+                            <textarea id="applicant-note" name="Why you are interested" rows="5" required></textarea>
+
+                            <button class="button application-submit" type="submit">Prepare application email <span aria-hidden="true">&nbsp;↗</span></button>
+                        </form>
+                        <p class="application-hint application-privacy">Your answers are added to an email draft on your device; this page does not send or store them.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact"><div class="section-inner contact-row"><div><p class="eyebrow">Questions first?</p><h2>Reach out to our team about the internship.</h2></div><a class="button" href="mailto:hello.evolvetechlabs@gmail.com?subject=Full-Stack%20Internship%20Question">Email Evolve <span aria-hidden="true">&nbsp;↗</span></a></div></section>
+    </main>
+    <footer><div class="footer-inner"><a class="brand" href="index.html"><img class="brand-logo" src="assets/evolve-logo.png" alt="Evolve Tech Labs"></a><span>Thoughtful technology. Forward motion.</span><span>© 2026 Evolve Tech Labs</span></div></footer>
+    <script>
+        document.querySelector("#intern-application").addEventListener("submit", (event) => {
+            event.preventDefault();
+            const answers = new FormData(event.currentTarget);
+            const body = Array.from(answers, ([question, answer]) => `${question}: ${answer}`).join("\n\n");
+            const subject = encodeURIComponent("Full-Stack Software Engineer Intern Application");
+            window.location.href = `mailto:hello.evolvetechlabs@gmail.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+        });
+    </script>
+</body>
+</html>
