@@ -80,36 +80,5 @@
 		</section>
 	</main>
 	<footer><div class="footer-inner"><a class="brand" href="index.html"><img class="brand-logo" src="assets/evolve-logo-black.png" alt="Evolve Tech Labs"></a><span>Thoughtful technology. Forward motion.</span><span>&copy; 2026 Evolve Tech Labs</span></div></footer>
-	<script>
-		const contactForm = document.querySelector("#contact-form");
-		const contactStatus = document.querySelector("#contact-form-status");
-		const contactSubmit = contactForm.querySelector("button[type='submit']");
-
-		contactForm.addEventListener("submit", async (event) => {
-			event.preventDefault();
-			contactSubmit.disabled = true;
-			contactStatus.textContent = "Sending your message...";
-
-			try {
-				const response = await fetch("https://formsubmit.co/ajax/hello.evolvetechlabs@gmail.com", {
-					method: "POST",
-					headers: { "Content-Type": "application/json", "Accept": "application/json" },
-					body: JSON.stringify(Object.fromEntries(new FormData(contactForm)))
-				});
-				const result = await response.json();
-
-				if (!response.ok || (result.success !== true && result.success !== "true")) {
-					throw new Error("Form delivery failed");
-				}
-
-				contactStatus.textContent = "Thanks. Your inquiry was sent. Redirecting...";
-				window.location.assign("https://evolvetechlabs.netlify.app/");
-			} catch {
-				contactStatus.textContent = "We could not send your inquiry. Please email hello.evolvetechlabs@gmail.com directly.";
-			} finally {
-				contactSubmit.disabled = false;
-			}
-		});
-	</script>
 </body>
 </html>
