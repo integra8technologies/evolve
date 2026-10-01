@@ -213,15 +213,20 @@ h2 { max-width: 700px; margin-bottom: 16px; font-family: var(--display); font-si
 .unpaid-notice .item-number { margin-bottom: 8px; }
 .unpaid-notice p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
 .unpaid-notice strong { color: var(--ink); }
-.application-subheading { margin: 30px 0 0; font-family: var(--display); font-size: 17px; }
+.opening-role { margin-top: 30px; padding-top: 25px; border-top: 1px solid var(--line); }
+.opening-role .item-number { margin-bottom: 9px; }
+.opening-role h3 { margin-bottom: 8px; font-family: var(--display); font-size: 21px; }
+.opening-role > p { margin-bottom: 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
+.opening-role h4 { margin: 18px 0 0; font-family: var(--display); font-size: 13px; }
+.opening-role .assurance-list { margin-top: 8px; }
 .application-intro .assurance-list { margin-top: 12px; }
 .application-hint { margin-bottom: 20px; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .application-form { display: grid; gap: 9px; }
 .application-form label { margin-top: 8px; font-size: 13px; font-weight: 700; }
 .application-form label span { color: var(--muted); font-weight: 400; }
-.application-form input, .application-form textarea { width: 100%; min-height: 46px; padding: 11px 12px; border: 1px solid #cfc8cf; border-radius: 2px; background: #fff; color: var(--ink); font: inherit; font-size: 14px; }
+.application-form input, .application-form select, .application-form textarea { width: 100%; min-height: 46px; padding: 11px 12px; border: 1px solid #cfc8cf; border-radius: 2px; background: #fff; color: var(--ink); font: inherit; font-size: 14px; }
 .application-form textarea { min-height: 130px; resize: vertical; }
-.application-form input:focus, .application-form textarea:focus { outline: 2px solid var(--brand); outline-offset: 2px; }
+.application-form input:focus, .application-form select:focus, .application-form textarea:focus { outline: 2px solid var(--brand); outline-offset: 2px; }
 .application-submit { justify-self: start; margin-top: 12px; cursor: pointer; font-family: inherit; }
 .application-privacy { margin: 15px 0 0; font-size: 11px; }
 .form-honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
