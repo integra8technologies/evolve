@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore products from Evolve Tech Labs, follow what is in progress, and dive into the thinking and documentation behind each product.">
+    <meta name="theme-color" content="#4f0f69">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Products | Evolve Tech Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <header class="site-header section-inner">
+        <a class="brand" href="index.html" aria-label="Evolve Tech Labs home"><img class="brand-logo" src="assets/evolve-logo-black.png" alt="Evolve Tech Labs"></a>
+        <nav class="nav-links desktop-nav" aria-label="Main navigation"><a href="services.html">Services</a><a href="products.html" aria-current="page">Products</a><a href="solutions.html">Solutions</a><a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="about.html">About</a><a href="approach.html">Approach</a><a href="careers.html">Careers</a><a class="nav-cta" href="contact.html">Let's talk <span aria-hidden="true">↗</span></a></nav>
+        <details class="mobile-nav"><summary>Menu</summary><nav class="mobile-nav-panel" aria-label="Mobile navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="products.html" aria-current="page">Products</a><a href="solutions.html">Solutions</a><a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="about.html">About</a><a href="approach.html">Approach</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></nav></details>
+    </header>
+    <main>
+        <section class="page-banner products-banner">
+            <div class="page-banner-inner products-banner-inner">
+                <div>
+                    <p class="eyebrow">The Evolve product library</p>
+                    <h1>Products, in progress and out in the world.</h1>
+                    <p>A living record of what we make: what each product does, who it is for, how it works, and where it is going next.</p>
+                    <a class="products-hero-link" href="#product-library">Explore the library <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="product-index" aria-label="Product library overview">
+                    <span class="product-index-kicker">A working product archive</span>
+                    <div class="index-line"><span>01</span><span>In the making</span><span class="index-pulse" aria-hidden="true"></span></div>
+                    <div class="index-line"><span>02</span><span>Shipped products</span><span class="index-dot" aria-hidden="true"></span></div>
+                    <div class="index-line"><span>03</span><span>Every decision, documented</span><span aria-hidden="true">↗</span></div>
+                    <span class="product-index-foot">Clear context. Thoughtful craft. Shared progress.</span>
+                </div>
+            </div>
+        </section>
+        <section class="section product-library" id="product-library">
+            <div class="section-inner">
+                <div class="section-heading product-library-heading">
+                    <div>
+                        <p class="section-label">Product library</p>
+                        <h2>One home for every product story.</h2>
+                    </div>
+                    <p class="section-lead">These two starter entries are deliberately blank. Replace them with your own products and documentation—no sample projects or invented claims.</p>
+                </div>
+                <div class="product-controls" role="search">
+                    <label class="product-search-label" for="product-search">Find a product</label>
+                    <input id="product-search" class="product-search" type="search" placeholder="Search by name, status, or topic" autocomplete="off">
+                    <div class="product-filters" role="group" aria-label="Filter products by status">
+                        <button class="product-filter is-active" type="button" data-filter="all" aria-pressed="true">All products <span>02</span></button>
+                        <button class="product-filter" type="button" data-filter="building" aria-pressed="false">In progress <span>01</span></button>
+                        <button class="product-filter" type="button" data-filter="shipped" aria-pressed="false">Shipped <span>01</span></button>
+                    </div>
+                </div>
+                <p class="product-results" id="product-results" aria-live="polite">Two starter entries are ready for your products.</p>
+
+                <div class="product-group" data-product-group="building">
+                    <div class="product-group-heading" id="in-progress">
+                        <p class="section-label">01 / In progress</p>
+                        <p>Show the work as it takes shape.</p>
+                    </div>
+                    <div class="product-grid">
+                        <article class="product-card product-card--building" data-status="building" data-search="in progress building roadmap discovery design development your product">
+                            <div class="product-art product-art--building" aria-hidden="true"><span class="art-orbit art-orbit--one"></span><span class="art-orbit art-orbit--two"></span><span class="art-core"></span><span class="art-coordinate">EV / 01</span></div>
+                            <div class="product-card-body">
+                                <div class="product-card-meta"><span class="product-status product-status--building"><span></span> In progress</span><span class="product-placeholder-label">Starter entry</span></div>
+                                <h3>Your product in progress</h3>
+                                <p class="product-summary">Replace this starter entry with the product you are building. Capture the problem, current milestone, next steps, and the decisions still being explored.</p>
+                                <div class="product-tags"><span>Discovery</span><span>Roadmap</span><span>Build notes</span></div>
+                                <details class="product-documentation">
+                                    <summary>Open product documentation <span aria-hidden="true">↗</span></summary>
+                                    <div class="product-doc-body">
+                                        <p class="product-doc-intro">Replace each prompt with the facts, links, and decisions for this product. Mark unknowns as open questions instead of guessing.</p>
+                                        <div class="product-doc-grid">
+                                            <section><span>01 / Product brief</span><h4>What is it?</h4><p>Product name, one-sentence description, value proposition, owner, and last-updated date.</p></section>
+                                            <section><span>02 / Problem &amp; outcomes</span><h4>Why are we building it?</h4><p>User problem, business opportunity, evidence, goals, and how success will be measured.</p></section>
+                                            <section><span>03 / Users &amp; roles</span><h4>Who is it for?</h4><p>Primary users, use cases, permissions, user needs, and important operating contexts.</p></section>
+                                            <section><span>04 / Scope &amp; capabilities</span><h4>What does it do?</h4><p>Core workflows, features, requirements, exclusions, and current capability status.</p></section>
+                                            <section><span>05 / Experience &amp; access</span><h4>How does it feel to use?</h4><p>Key journeys, design references, accessibility requirements, and usability findings.</p></section>
+                                            <section><span>06 / Status &amp; roadmap</span><h4>Where is it going?</h4><p>Current phase, recent progress, next milestones, blockers, and planned scope—with dates.</p></section>
+                                            <section><span>07 / Architecture</span><h4>How is it put together?</h4><p>System overview, components, data flows, diagrams, and the reasoning behind key decisions.</p></section>
+                                            <section><span>08 / Technology &amp; integrations</span><h4>What does it depend on?</h4><p>Languages, frameworks, infrastructure, third-party services, APIs, and integration owners.</p></section>
+                                            <section><span>09 / Data &amp; safeguards</span><h4>How is information protected?</h4><p>Data collected, retention, privacy assumptions, access controls, threat considerations, and security notes.</p></section>
+                                            <section><span>10 / Quality &amp; testing</span><h4>How do we know it works?</h4><p>Test strategy, automated checks, manual scenarios, known defects, and release criteria.</p></section>
+                                            <section><span>11 / Delivery &amp; operations</span><h4>How is it run?</h4><p>Environments, deployment steps, monitoring, recovery, support process, and operational owner.</p></section>
+                                            <section><span>12 / Risks &amp; open questions</span><h4>What needs attention?</h4><p>Constraints, limitations, assumptions, risks, mitigations, and questions that still need an answer.</p></section>
+                                            <section><span>13 / Evidence &amp; learning</span><h4>What are we learning?</h4><p>Adoption and outcome measures, feedback sources, research notes, and how insights shape the roadmap.</p></section>
+                                            <section><span>14 / Change history</span><h4>What changed and when?</h4><p>Dated release notes, meaningful product changes, decision records, contributors, and links to supporting docs.</p></section>
+                                        </div>
+                                        <p class="product-doc-note">For an in-progress product, keep the current state, next decision, and date of the last update easy to find.</p>
+                                    </div>
+                                </details>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="product-group" data-product-group="shipped">
+                    <div class="product-group-heading" id="shipped">
+                        <p class="section-label">02 / Shipped</p>
+                        <p>Share what is live—and how it got there.</p>
+                    </div>
+                    <div class="product-grid">
+                        <article class="product-card product-card--shipped" data-status="shipped" data-search="shipped launched live product users features architecture technology release operations">
+                            <div class="product-art product-art--shipped" aria-hidden="true"><span class="art-panel art-panel--one"></span><span class="art-panel art-panel--two"></span><span class="art-panel art-panel--three"></span><span class="art-coordinate">EV / 02</span></div>
+                            <div class="product-card-body">
+                                <div class="product-card-meta"><span class="product-status product-status--shipped"><span></span> Shipped</span><span class="product-placeholder-label">Starter entry</span></div>
+                                <h3>Your shipped product</h3>
+                                <p class="product-summary">Replace this starter entry with a product you have launched. Document what it does today, who it serves, how it is operated, and what you learned.</p>
+                                <div class="product-tags"><span>Product brief</span><span>Release notes</span><span>Operations</span></div>
+                                <details class="product-documentation">
+                                    <summary>Open product documentation <span aria-hidden="true">↗</span></summary>
+                                    <div class="product-doc-body">
+                                        <p class="product-doc-intro">Replace each prompt with the facts, links, and decisions for this product. Mark unknowns as open questions instead of guessing.</p>
+                                        <div class="product-doc-grid">
+                                            <section><span>01 / Product brief</span><h4>What is it?</h4><p>Product name, one-sentence description, value proposition, owner, and last-updated date.</p></section>
+                                            <section><span>02 / Problem &amp; outcomes</span><h4>Why was it built?</h4><p>User problem, business opportunity, evidence, goals, and outcomes achieved so far.</p></section>
+                                            <section><span>03 / Users &amp; roles</span><h4>Who is it for?</h4><p>Primary users, use cases, permissions, user needs, and important operating contexts.</p></section>
+                                            <section><span>04 / Scope &amp; capabilities</span><h4>What does it do?</h4><p>Core workflows, features, requirements, exclusions, and current capability status.</p></section>
+                                            <section><span>05 / Experience &amp; access</span><h4>How does it feel to use?</h4><p>Key journeys, design references, accessibility requirements, and usability findings.</p></section>
+                                            <section><span>06 / Status &amp; roadmap</span><h4>What comes next?</h4><p>Release status, recent progress, upcoming milestones, planned scope, and dates.</p></section>
+                                            <section><span>07 / Architecture</span><h4>How is it put together?</h4><p>System overview, components, data flows, diagrams, and the reasoning behind key decisions.</p></section>
+                                            <section><span>08 / Technology &amp; integrations</span><h4>What does it depend on?</h4><p>Languages, frameworks, infrastructure, third-party services, APIs, and integration owners.</p></section>
+                                            <section><span>09 / Data &amp; safeguards</span><h4>How is information protected?</h4><p>Data collected, retention, privacy assumptions, access controls, threat considerations, and security notes.</p></section>
+                                            <section><span>10 / Quality &amp; testing</span><h4>How do we know it works?</h4><p>Test strategy, automated checks, manual scenarios, known defects, and release criteria.</p></section>
+                                            <section><span>11 / Delivery &amp; operations</span><h4>How is it run?</h4><p>Environments, deployment steps, monitoring, recovery, support process, and operational owner.</p></section>
+                                            <section><span>12 / Risks &amp; limitations</span><h4>What should users know?</h4><p>Constraints, known limitations, assumptions, risks, mitigations, and support guidance.</p></section>
+                                            <section><span>13 / Evidence &amp; learning</span><h4>What is the impact?</h4><p>Adoption and outcome measures, feedback sources, research notes, and what you would improve.</p></section>
+                                            <section><span>14 / Change history</span><h4>What changed and when?</h4><p>Dated release notes, meaningful product changes, decision records, contributors, and links to supporting docs.</p></section>
+                                        </div>
+                                        <p class="product-doc-note">Keep the live version, support path, ownership, and most recent release easy to find.</p>
+                                    </div>
+                                </details>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <p class="product-empty" id="product-empty" hidden>No products match that search. Try another name or status.</p>
+            </div>
+        </section>
+        <section class="section product-howto" id="documentation">
+            <div class="section-inner product-howto-layout">
+                <div>
+                    <p class="section-label">A to Z, and always evolving</p>
+                    <h2>Good documentation is part of the product.</h2>
+                    <p class="section-lead">Each product entry has an expandable documentation file. Replace the prompts with real information, link out to deeper references, and update it as the product changes.</p>
+                </div>
+                <div class="product-howto-card">
+                    <span class="product-howto-number">A → Z</span>
+                    <h3>How to add a product</h3>
+                    <ol>
+                        <li>Copy a starter product card in <code>products.html</code>.</li>
+                        <li>Set its status to <code>building</code> or <code>shipped</code> and update the matching group.</li>
+                        <li>Replace the starter name, summary, tags, and documentation prompts with accurate details.</li>
+                        <li>Keep the search keywords in <code>data-search</code> useful, and adjust the status filter counts.</li>
+                        <li>Use dated notes and link to detailed diagrams, API references, runbooks, and release history as needed.</li>
+                    </ol>
+                    <p>This is a static page, so updates are made in the page source. Keep sensitive credentials, private customer information, and secrets out of public documentation.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact"><div class="section-inner contact-row"><div><p class="eyebrow">Build what comes next</p><h2>Have a product idea worth bringing to life?</h2></div><a class="button" href="contact.html">Let's talk <span aria-hidden="true">&nbsp;↗</span></a></div></section>
+    </main>
+    <footer><div class="footer-inner"><a class="brand" href="index.html"><img class="brand-logo" src="assets/evolve-logo.png" alt="Evolve Tech Labs"></a><span>Thoughtful technology. Forward motion.</span><span>© 2026 Evolve Tech Labs</span></div></footer>
+    <script>
+        const productCards = [...document.querySelectorAll(".product-card")];
+        const productGroups = [...document.querySelectorAll("[data-product-group]")];
+        const productFilters = [...document.querySelectorAll(".product-filter")];
+        const productSearch = document.querySelector("#product-search");
+        const productResults = document.querySelector("#product-results");
+        const productEmpty = document.querySelector("#product-empty");
+        let activeFilter = "all";
+
+        function updateProducts() {
+            const query = productSearch.value.trim().toLowerCase();
+            let visibleCount = 0;
+
+            productCards.forEach((card) => {
+                const matchesFilter = activeFilter === "all" || card.dataset.status === activeFilter;
+                const matchesSearch = !query || `${card.dataset.search} ${card.textContent}`.toLowerCase().includes(query);
+                card.hidden = !matchesFilter || !matchesSearch;
+                if (!card.hidden) visibleCount += 1;
+            });
+
+            productGroups.forEach((group) => {
+                group.hidden = !group.querySelector(".product-card:not([hidden])");
+            });
+
+            productEmpty.hidden = visibleCount !== 0;
+            productResults.textContent = visibleCount === 0
+                ? "No matching products."
+                : `${visibleCount} ${visibleCount === 1 ? "starter entry" : "starter entries"} shown. Replace these with your product details.`;
+        }
+
+        productFilters.forEach((button) => {
+            button.addEventListener("click", () => {
+                activeFilter = button.dataset.filter;
+                productFilters.forEach((filter) => {
+                    const isActive = filter === button;
+                    filter.classList.toggle("is-active", isActive);
+                    filter.setAttribute("aria-pressed", String(isActive));
+                });
+                updateProducts();
+            });
+        });
+        productSearch.addEventListener("input", updateProducts);
+    </script>
+</body>
+</html>
