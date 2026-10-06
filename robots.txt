@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://evolvetechlabs.vercel.app/sitemap.xml
+Sitemap: https://evolvetechlabs.cloud/sitemap.xml
